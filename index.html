@@ -791,9 +791,9 @@
             // Update all elements with data-en and data-es attributes
             document.querySelectorAll('[data-en][data-es]').forEach(element => {
                 if (lang === 'en') {
-                    element.textContent = element.getAttribute('data-en');
+                    element.innerHTML = element.getAttribute('data-en');
                 } else {
-                    element.textContent = element.getAttribute('data-es');
+                    element.innerHTML = element.getAttribute('data-es');
                 }
             });
         }
